@@ -1,8 +1,7 @@
-largura = float(input("Digite a largura: "))
-comprimento = float(input("Digite o comprimento: "))
+h = float(input("Tronco da piramide: "))
+Bmenor = float(input("Base menor: "))
+Bmaior = float(input("Base maior: "))
 
-metro = largura * comprimento
+volume = h/3 * (Bmaior**2 + Bmenor**2 + (Bmaior**2 * Bmenor**2) **0.5)
 
-w = metro * 18
-
-print("a quantidade de watts necessaria é: %.2f" % (w))
+print(volume)

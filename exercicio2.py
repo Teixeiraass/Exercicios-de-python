@@ -1,16 +1,5 @@
-temp = []
-contador = 0 
+horas = float(input("Horas: "))
 
-while True:
-    Temp = float(input("Digite a temperatura: "))
-    temp.append(Temp)
-    if Temp < 0:
-        break
+valor = horas * 60
 
-tempM = float(input("Digite a temperatura minima: "))
-
-for i in temp:
-    if i > tempM:
-        contador +=1
-
-print("%.0f dias superaram a temperatura minima" % (contador))
+print(valor)

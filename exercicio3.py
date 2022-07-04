@@ -1,21 +1,10 @@
-Dia = []
-Volume = []
-quarta = 0
-soma = 0
-somaT = 0
+anos = int(input("Quantos anos: "))
+meses = int(input("Quantos meses: "))
+dias = int(input("Quantos dias: "))
 
-for i in range(15):
-    dia = input("Digite o dia da semana: ")
-    Dia.append(dia)
-    vol = float(input("Digite o volume de chuvas: "))
-    Volume.append(vol)
-    somaT += vol
-    if dia == "quarta-feira" or dia == "Quarta-feira":
-        quarta += 1
-        soma += vol
+calAnos = 365 * anos
+calMeses = 30 * meses
 
-media = soma / quarta
+idade = calAnos + calMeses + dias
 
-print("A media do volume de chuvas de quarta feira é:", media)
-
-print("A soma de total dos volumes de chuva é:", somaT)
+print("Sua idade em dias é: ", idade)
